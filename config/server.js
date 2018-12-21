@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(expressValidator);
+app.use(expressValidator());
 
 // incluindo as rotas e conexao do banco de dados dentro do servidor
 consign()
